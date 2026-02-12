@@ -1,13 +1,14 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
+  "styles": "/styles.css",
   "name": "Mint Starter Kit",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#7C3AED",
+    "light": "#A855F7",
+    "dark": "#5B21B6"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/logo/Correl8_inline_light.svg",
   "navigation": {
     "tabs": [
       {
@@ -17,32 +18,28 @@
             "group": "Getting started",
             "pages": [
               "index",
-              "quickstart",
-              "development"
+              "quickstart"
             ]
           },
           {
-            "group": "Customization",
-            "pages": [
-              "essentials/settings",
-              "essentials/navigation"
+          "group": "Data connection",
+          "pages": [
+              "essentials/overview",
+              "essentials/python-sdk",
+              {
+                "group": "Routers",
+                "pages": [
+                  "essentials/openrouter"
+                ]
+              }
             ]
           },
           {
-            "group": "Writing content",
+            "group": "Correl8 Agent",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
-            ]
-          },
-          {
-            "group": "AI tools",
-            "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
+              "essentials/agent",
+              "essentials/agent-dimensions",
+              "essentials/agent-patterns-outcomes"
             ]
           }
         ]
@@ -51,13 +48,13 @@
         "tab": "API reference",
         "groups": [
           {
-            "group": "API documentation",
+            "group": "Correl8 API",
             "pages": [
               "api-reference/introduction"
             ]
           },
           {
-            "group": "Endpoint examples",
+            "group": "Endpoints",
             "pages": [
               "api-reference/endpoint/get",
               "api-reference/endpoint/create",
@@ -70,34 +67,29 @@
     ],
     "global": {
       "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
+
         {
           "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
+          "href": "https://www.correl8.ai/blog"
         }
       ]
     }
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "/logo/Correl8_inline_light.svg",
+    "dark": "/logo/Correl8_inline_dark.svg"
   },
   "navbar": {
     "links": [
       {
         "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "href": "mailto:founders@correl8.ai"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "Correl8 app",
+      "href": "https://app.correl8.ai"
     }
   },
   "contextual": {
@@ -114,9 +106,7 @@
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "linkedin": "https://www.linkedin.com/company/correl8-ai"
     }
   }
 }

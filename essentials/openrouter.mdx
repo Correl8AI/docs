@@ -1,0 +1,33 @@
+---
+title: "OpenRouter"
+description: "Use OpenRouter Broadcast to stream traces into Correl8"
+---
+
+## OpenRouter Broadcast to Correl8
+
+OpenRouter's **Broadcast** feature lets you automatically send traces from your OpenRouter requests to external observability and analytics platforms.  
+Instead of adding custom instrumentation in your application code, Broadcast forwards prompts, responses, timing, and metadata for each request to a destination you configure.
+
+For Correl8, the destination is the **S3 bucket assigned to your project**. Correl8 ingests traces from this bucket and turns them into queryable events across chat, voice, and images.
+
+## How it works
+
+- **Source**: Your application sends LLM requests through OpenRouter as usual.  
+- **Broadcast**: OpenRouter enables Broadcast for your account and streams trace data for each API request.  
+- **Destination**: Broadcast writes trace payloads into the S3 bucket that Correl8 provisions for your project.  
+- **Ingestion**: Correl8 continuously reads from this bucket, normalizes events, and correlates them with outcomes and user attributes.
+
+## Configuration steps (high level)
+
+1. **Enable Broadcast in OpenRouter**
+   - In your OpenRouter dashboard, go to **Settings → Broadcast**.
+   - Toggle **Enable Broadcast** for your account or organization.
+2. **Point Broadcast to the Correl8 S3 bucket**
+   - In your Correl8 onboarding or settings, locate the S3 bucket ARN / URL assigned to your project.
+   - Add this bucket as the Broadcast destination in OpenRouter.
+3. **Verify traces are flowing**
+   - Make a few test requests through OpenRouter.
+   - In Correl8, confirm that new interactions appear in your timelines / segments once ingestion runs.
+
+We will add provider-specific screenshots and exact S3 configuration details here as the integration matures.
+

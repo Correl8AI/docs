@@ -1,0 +1,28 @@
+---
+title: "Routers"
+description: "Overview of router-based data connections into Correl8"
+---
+
+## Routers
+
+Routers let you connect interaction traffic from existing LLM gateways into Correl8 without changing your application code.
+
+They sit between your application and model providers, and can forward traces to Correl8 alongside your normal API calls.
+
+## Supported routers
+
+Today, Correl8 supports the following router:
+
+<Columns cols={2}>
+  <Card
+    title="OpenRouter"
+    icon="route"
+    href="/essentials/openrouter"
+    horizontal
+  >
+    Use OpenRouter Broadcast to stream traces from your LLM traffic into the S3 bucket Correl8 manages for your project.
+  </Card>
+</Columns>
+
+As we add more routers, they will appear here with links to their specific setup guides.
+

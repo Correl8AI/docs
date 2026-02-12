@@ -1,0 +1,17 @@
+/* Gradient pill for primary navbar button */
+.mintlify .Navbar .primary a,
+.mintlify .Navbar .primary button {
+  position: relative;
+  border-radius: 9999px;
+  padding: 0.4rem 1.2rem;
+  background: linear-gradient(90deg, #facc15, #3b82f6, #ec4899); /* spectrum border */
+  color: #ffffff;
+}
+
+.mintlify .Navbar .primary a span,
+.mintlify .Navbar .primary button span {
+  display: inline-block;
+  border-radius: 9999px;
+  padding: 0.3rem 1.15rem;
+  background: #000000;
+}
