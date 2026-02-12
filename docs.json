@@ -54,7 +54,7 @@
             ]
           },
           {
-            "group": "Endpoints",
+            "group": "Correl8 endpoints",
             "pages": [
               "api-reference/endpoint/get",
               "api-reference/endpoint/create",
