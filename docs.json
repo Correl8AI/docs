@@ -2,13 +2,13 @@
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
   "styles": "/styles.css",
-  "name": "Mint Starter Kit",
+  "name": "Correl8 documentation",
   "colors": {
     "primary": "#7C3AED",
     "light": "#A855F7",
     "dark": "#5B21B6"
   },
-  "favicon": "/logo/Correl8_inline_light.svg",
+  "favicon": "favicon.svg",
   "navigation": {
     "tabs": [
       {
