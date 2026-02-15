@@ -12,7 +12,7 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "Documentation",
         "groups": [
           {
             "group": "Getting started",
@@ -43,31 +43,15 @@
             ]
           }
         ]
-      },
-      {
-        "tab": "API reference",
-        "groups": [
-          {
-            "group": "Correl8 API",
-            "pages": [
-              "api-reference/introduction"
-            ]
-          },
-          {
-            "group": "Correl8 endpoints",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
-            ]
-          }
-        ]
       }
     ],
     "global": {
       "anchors": [
-
+        {
+          "anchor": "Home page",
+          "href": "https://www.correl8.ai",
+          "icon": "house"
+        },
         {
           "anchor": "Blog",
           "href": "https://www.correl8.ai/blog"
